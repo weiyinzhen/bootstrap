@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>社会意义和文化内涵</title>
+    <!-- 引入 Bootstrap 和button 样式 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/buttons.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 引入Font Awesome的CSS文件，字体图标 -->
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- 自定义样式 -->
+    <style>
+      /* 在此处添加自定义样式 */
+      .jumbotron {
+        background-image: url("image/bg2.jpg");
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 100px;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar" data-offset="70">
+    <!-- 导航栏 -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">戏曲民俗手工艺-社会意义</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="历史背景.html">历史背景</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="艺术风格.html">艺术风格和表现形式</a>
+            </li>
+            
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    社会意义
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#opera">戏曲道具</a>
+                    <a class="dropdown-item" href="#folk">民俗器具</a>
+                    <a class="dropdown-item" href="#crafts">手工制品</a>
+                    <a class="dropdown-item" href="#culture">文化内涵</a>
+                  </div>
+                </li>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="传承和保护.html">传承和保护</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="当代价值和启示.html">当代价值和启示</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 巨幕 -->
+    <div class="jumbotron jumbotron-fluid text-center  my-5" id="intro">
+      <div class="container">
+        <h1 class="display-4">社会意义</h1>
+        <p class="lead">传承中华文化精髓，展示人类智慧和创造力</p>
+        <hr class="my-4" />
+        <p>
+          在这里，您可以了解到戏曲、民俗、手工艺品的精彩世界，探究其社会意义和文化内涵。
+        </p>
+
+        <a
+          class="button btn-lg button-primary button-box button-raised button-giant button-longshadow-left"
+          href="#culture"
+          role="button"
+        >
+          了解
+        </a>
+        <a
+          class="button btn-lg button-primary button-box button-raised button-giant button-longshadow-right"
+          href="#culture"
+          role="button"
+        >
+          更多
+        </a>
+      </div>
+    </div>
+
+    <!-- 选项卡 -->
+    <div class="container my-5" id="opera">
+      <h2 class="text-center mb-5">戏曲道具</h2>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="tab1-tab"
+            data-toggle="tab"
+            href="#tab1"
+            role="tab"
+            aria-controls="tab1"
+            aria-selected="true"
+            >戏剧服装</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="tab2-tab"
+            data-toggle="tab"
+            href="#tab2"
+            role="tab"
+            aria-controls="tab2"
+            aria-selected="false"
+            >戏剧道具</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="tab3-tab"
+            data-toggle="tab"
+            href="#tab3"
+            role="tab"
+            aria-controls="tab3"
+            aria-selected="false"
+            >面谱</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content my-5" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="tab1"
+          role="tabpanel"
+          aria-labelledby="tab1-tab"
+        >
+          <!-- 轮播图 -->
+          <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carousel1"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel1" data-slide-to="1"></li>
+              <li data-target="#carousel1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="image/戏剧服装1.PNG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>服装1</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="image/戏曲服装2.PNG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>服装2</h5>
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="image/戏曲服装3.PNG"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>服装3</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carousel1"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">上一个</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carousel1"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">下一个</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tab2"
+          role="tabpanel"
+          aria-labelledby="tab2-tab"
+        >
+          <!-- 工具提示 -->
+          <button
+            type="button"
+            class="btn btn-success"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="这是道具1"
+          >
+            宝剑
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="这是道具2"
+          >
+            弓箭
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-info"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="这是道具3"
+          >
+            屏风
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="这是道具4"
+          >
+            锣、鼓、钹、铙
+          </button>
+          <button
+            type="button"
+            class="btn btn-warning"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="一些特殊道具5"
+          >
+            水火、烟雾、追风
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="道具6"
+          >
+            等
+          </button>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="tab3"
+          role="tabpanel"
+          aria-labelledby="tab3-tab"
+        >
+          <!-- 列表组 -->
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-primary">红脸</li>
+            <li class="list-group-item list-group-item-secondary">白脸</li>
+            <li class="list-group-item list-group-item-success">青衣</li>
+            <li class="list-group-item list-group-item-danger">花旦</li>
+            <li class="list-group-item list-group-item-warning">老生</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 滚动监听 -->
+    <div class="container my-5" id="folk">
+      <h2 class="text-center mb-5">民俗器具</h2>
+      <div class="row">
+        <nav class="col-md-3 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column" id="myScrollspy">
+              <li class="nav-item">
+                <a class="nav-link active" href="#item1">农具类：</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#item2">纺织类：</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#item3">食具类</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#item3">住房类：</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#item3">交通类：</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="col-md-9">
+          <p>
+            <i class="fa fa-asterisk"></i
+            >农具类：包括犁、耙、镰刀、锄头等耕作与种植所需的农业工具。
+          </p>
+          <p>
+            <i class="fa fa-check-circle"></i
+            >纺织类：包括纺车、织布机、梭子等织布工具。
+          </p>
+          <p>
+            <i class="fa fa-diamond"></i
+            >食具类:包括碗、盆、筷子、勺子等，是餐桌上不可或缺的必备用品。
+          </p>
+          <p>
+            <i class="fa fa-commenting-o"></i
+            >住房类：包括瓦、砖、木材等建筑材料，以及门、窗等家居用品。
+          </p>
+          <p>
+            <i class="fa fa-heart"></i
+            >交通类：包括车、船、鞍、马具等交通工具和配件。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 折叠面板-->
+    <div class="container my-5" id="crafts">
+      <h2 class="text-center mb-5">手工制品</h2>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="heading1">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-info"
+                data-toggle="collapse"
+                data-target="#collapse1"
+                aria-expanded="true"
+                aria-controls="collapse1"
+              >
+                钟离池畔的《牡丹亭》
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse1"
+            class="collapse show"
+            aria-labelledby="heading1"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              这幅刺绣作品由北京刺绣厂历时40年制作而成，于1973年完成。它根据明代戏剧《牡丹亭》中的故事情节，通过精湛的刺绣技艺展现出了唐代的宫廷风貌、人物形象和自然景色。整幅刺绣细腻精美，色彩鲜艳，是中国刺绣艺术中的杰作。
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="heading2">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-danger collapsed"
+                data-toggle="collapse"
+                data-target="#collapse2"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                明代青花瓷《万历宝瓶》
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse2"
+            class="collapse"
+            aria-labelledby="heading2"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              这是一件明代景德镇窑口径超过70厘米的瓷瓶，高约168厘米，重约390千克，是中国现存最大、最重的青花瓷器。其釉色淡雅，图案清晰，制作技艺精湛，被誉为“瓷器皇后”。
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="heading3">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-primary collapsed"
+                data-toggle="collapse"
+                data-target="#collapse3"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                敦煌莫高窟壁画中的佛教手串
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapse3"
+            class="collapse"
+            aria-labelledby="heading3"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              这些手串由当时的艺术家们用各种珍贵的宝石和贵金属手工制成，被广泛应用于佛教仪式和宗教活动中。手串采用了多种形态，如圆珠、扁珠、片状等，线条流畅，装饰精美，具有浓郁的佛教文化气息
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 表格 -->
+    <div class="container my-5" id="culture">
+      <h2 class="text-center mb-5">文化内涵</h2>
+      <table class="table table-bordered table-striped text-center">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">名称</th>
+            <th scope="col">意义</th>
+            <th scope="col">代表作品</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>戏曲</td>
+            <td>传承和展示中华文化精髓</td>
+            <td>《红楼梦》、《西游记》、《水浒传》</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>民俗</td>
+            <td>反映人们生活的历史和文化特点</td>
+            <td>元宵节、端午节、中秋节</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>手工艺品</td>
+            <td>彰显人类智慧和创造力</td>
+            <td>赵州桥、窑器、雕刻</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- 底部 -->
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>关于这个网页</h5>
+            <p>这里是戏曲民俗手工艺品的详细介绍以及补充说明</p>
+          </div>
+          <div class="col-md-3">
+            <h5>联系我</h5>
+            <p>地址：金穗大道XXX号</p>
+            <p>邮箱：example@example.com</p>
+            <p>电话：152xxxx0231</p>
+          </div>
+          <div class="col-md-3">
+            <h5>友情链接</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">链接1</a></li>
+              <li><a href="#">链接2</a></li>
+              <li><a href="#">链接3</a></li>
+              <li><a href="#">链接4</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>关注我hahahah</h5>
+            <i class="fa fa-weibo fa-2x mx-3"></i>
+            <i class="fa fa-weixin fa-2x mx-3"></i>
+            <i class="fa fa-qq fa-2x mx-3"></i>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2023 All rights reserved by 20205703017 weiyinzhen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

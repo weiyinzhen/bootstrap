@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap3.min.css"/>
+    <link rel="stylesheet" href="css/buttons.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+     <!-- 引入字体图标 -->
+     <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <style>
+      /* 添加自定义样式 */
+      body {
+        font-family: "微软雅黑", sans-serif;
+        background-color: #f5f5f5;
+      }
+      .jumbotron {
+        background-image: url("image/bg.jpg");
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 100px;
+      }
+      .nav-pills > li.active > a,
+      .nav-pills > li.active > a:hover,
+      .nav-pills > li.active > a:focus {
+        background-color: #337ab7;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+          <a href="index.html" class="navbar-brand" data-toggle="tooltip" title="点击跳转到首页">戏曲民俗手工艺传承和保护</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="历史背景.html">历史背景</a></li>
+            <li class="active"><a href="艺术风格.html">艺术风格</a></li>
+            <li class="active"><a href="社会意义.html">社会意义</a></li>
+            <li class="active"><a href="当代价值和启示.html">当代价值和启示</a></li>
+            <li><a href="#shouyiren">手艺人传记</a></li>
+            <li><a href="#zhanlan">文化展览</a></li>
+            <li><a href="#protect">保护政策</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li> 
+              <a href="register.html"
+                ><i class="fa fa-arrow-right"></i> 登录/注册</a
+              >
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <!--第三方组件-->
+    <div class="container">
+      <div class="jumbotron">
+        <h1>戏曲民俗手工艺传承和保护</h1>
+        <p>让美好的传统文化世代传承</p>
+        <p>
+          
+         <a href="#" class="button button-3d button-caution"><i class="fa fa-cammera"></i>了解更多</a>
+          
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="image/团花剪纸.PNG" style="width: 300px; height: auto;"alt="手工艺品1" />
+            <div class="caption">
+              <h3>传统古典剪纸</h3>
+              <p>
+                由国家级非物质文化遗产传承人亲手制作，体现了中国的传统美学和审美理念。
+              </p>
+              <p>
+                <button class="button button-royal  button-small button-raised button-giant button-longshadow-right"><i class="fa fa-asterisk">  </i> 查看详情</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="image/面雕.PNG" style="width: 300px; height: auto;" alt="手工艺品2" />
+            <div class="caption">
+              <h3>戏曲面塑</h3>
+              <p>以戏曲脸谱为形象，用糯米粉、豆沙等食材制成的传统手工艺品。</p>
+              <p>
+                <button class="button button-primary  button-small button-raised button-giant button-longshadow-left"><i class="fa fa-podcast">  </i> 查看详情</button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="image/刺绣.PNG"  style="width: 300px; height: auto;" alt="手工艺品3" />
+            <div class="caption">
+              <h3>传统刺绣</h3>
+              <p>以中国传统文化为主题，采用精湛的刺绣技艺制作而成。</p>
+              <p>
+                
+                <button class="button button-3d button-pill">查看详情</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 选项卡 -->
+      <h2>手艺人传记</h2>
+      <ul class="nav nav-tabs"id="shouyiren">
+        <li class="active"><a href="#teacher1" data-toggle="tab">陈君红</a></li>
+        <li><a href="#teacher2" data-toggle="tab">潘云鹤</a></li>
+        <li><a href="#teacher3" data-toggle="tab">王德武</a></li>
+      </ul>
+      <div class="tab-content" >
+        <div class="tab-pane active" id="teacher1">
+          <h3>陈君红</h3>
+          <p>
+            江苏省无锡市的太湖石刻画传承人，被誉为“太湖石之王”
+          </p>
+          
+        </div>
+        <div class="tab-pane" id="teacher2">
+          <h3>潘云鹤</h3>
+          <p>
+            中国传统木雕技艺非物质文化遗产代表性传承人，以其精湛的技艺和长期的探索与实践而赢得了广泛的好评和认可。
+          </p>
+         
+        </div>
+        <div class="tab-pane" id="teacher3">
+          <h3>王德武</h3>
+          <p>中国书法家协会会员、天津市文史界联合会副主席，他擅长楷书和行书，并在多年的实践中形成了自己独特的风格。</p>
+         
+        </div>
+      </div>
+
+      <!-- 列表组 -->
+      <h2>文化展览</h2>
+      <ul class="list-group"id="zhanlan">
+        
+        <li class="list-group-item"><i class="fa fa-spinner"> </i>  2019年大型民俗手工艺展览</li>
+        <li class="list-group-item"><i class="fa fa-check-square"> </i>  2020年国际文化遗产保护论坛</li>
+        <li class="list-group-item"><i class="fa fa-check-square-o"> </i>  2021年非物质文化遗产展览</li>
+      </ul>
+
+      <!-- 缩略图 -->
+      <h2>保护政策</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail" id="protect">
+            <img src="image/非遗.PNG" style="width: 300px; height: auto;"  alt="保护政策1" />
+            <div class="caption">
+              <h3>非遗保护法律法规</h3>
+              <p>通过制定相关法律法规，加强对非物质文化遗产的保护和传承。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="image/非遗插画.PNG"  style="width: 300px; height: auto;"alt="保护政策2">
+<div class="caption">
+<h3>宣传教育</h3>
+<p>通过各种形式的宣传教育，让更多人了解、认识和喜爱非物质文化遗产。</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="image/传统手艺人培训.PNG" style="width: 300px; height: auto;"  alt="保护政策3">
+<div class="caption">
+<h3>传统手艺人培训</h3>
+<p>对传统手艺人进行培训和技能传承，确保传统手艺得以延续。</p>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-md-3">
+<div class="thumbnail">
+<img src="image/非遗2.PNG"  style="width: 300px; height: auto;" alt="保护政策4">
+<div class="caption">
+<h3>非遗活动展示</h3>
+<p>通过各种形式的非遗活动展示，让更多人亲身体验非物质文化遗产的魅力。</p>
+</div>
+</div>
+</div>
+</div>
+        <!-- 脚注 -->
+        <footer class="footer bg-light mt-auto py-3">
+          <div class="container text-center">
+            <p class="text-muted mb-0">© 个人信息：
+              班级:20203D打印学院软件技术一班
+              学号：20205703017<br/>
+    
+              姓名：魏银珍
+              联系方式:152xxxx0231
+            </p>
+          </div>
+        </footer>
+        
+      
+        
+        <!-- 工具提示 -->
+        <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        
+        </body>
+        </html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>戏曲民俗手工艺</title>
+    <!-- 引入 Bootstrap 样式 和button样式 -->
+    <link rel="stylesheet" href="css/bootstrap3.min.css" />
+    <link rel="stylesheet" href="css/buttons.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- 引入字体图标 -->
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- 引入字体图标 Font Awesome的CSS文件-->
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- 自定义CSS -->
+    <style>
+      /* 设置巨幕背景图片 */
+      .jumbotron {
+        background-image: url("image/传统手工艺.PNG");
+        background-size: cover;
+        color: white;
+      }
+
+      /* 设置导航栏和页脚颜色 */
+      .navbar-inverse {
+        background-color: #333;
+        border-color: #222;
+      }
+      footer {
+        background-color: #333;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">戏曲民俗手工艺</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="历史背景.html">历史背景</a></li>
+            <li class="active"><a href="艺术风格.html">艺术风格</a></li>
+            <li class="active"><a href="社会意义.html">社会意义</a></li>
+            <li class="active"><a href="传承和保护.html">传承和保护</a></li>
+
+            <li><a href="#lishiyuanyuan">产品展示</a></li>
+            <li><a href="#chanpinpaihang">当代价值</a></li>
+            <li><a href="#associate">反馈建议</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="register.html"> 注册</a>
+            </li>
+            <li>
+              <a href="register.html">登录</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 巨幕 -->
+    <div class="jumbotron text-center">
+      <h1 class="text-danger">传统手工艺，当代价值</h1>
+      <p>探索戏曲民俗手工艺的文化魅力和现代价值</p>
+      <form class="form-inline">
+        <div class="input-group">
+          <input
+            type="email"
+            class="form-control"
+            size="50"
+            placeholder="输入您的邮箱地址"
+            required
+          />
+          <div class="input-group-btn">
+            <button type="button" class="btn btn-danger">搜索</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--选项卡-->
+    <div class="container mt-5">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#history"
+            >历史渊源</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#skills">技艺精湛</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#value">现代价值</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content" id="lishiyuanyuan">
+        <div id="history" class="tab-pane active">
+          <h1>历史渊源</h1>
+          <p>
+            戏曲民俗手工艺是中国传统文化的珍品之一，其历史可以追溯到几千年前。在漫长的历史长河中，它不仅为人们提供了美的享受和物质生活的支持，更是见证了中国文化发展的历程。
+          </p>
+        </div>
+        <div id="skills" class="tab-pane">
+          <h1>技艺精湛</h1>
+          <p>在这里您可以查看和编辑自己的个人资料信息。</p>
+        </div>
+        <div id="value" class="tab-pane">
+          <h1>现代价值</h1>
+          <p>
+            戏曲民俗手工艺虽然在当今生产方式高度机械化的社会显得有些落伍，但是它仍然具有极高的艺术价值和思想价值。当代人们可以通过手工艺品感受到传统文化的魅力，也可以借此寻找自身的文化根源。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 滚动监听 -->
+    <div class="row" style="margin-left: 40px">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#myNavbar2"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">产品分类</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar2">
+            <ul class="nav navbar-nav">
+              <li><a href="#sculpture">雕塑类</a></li>
+              <li><a href="#embroidery">刺绣类</a></li>
+              <li><a href="#shadow">皮影类</a></li>
+              <li><a href="#paper_cutting">剪纸类</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- 折叠 -->
+      <div class="col-sm-4" style="margin-left: 40px">
+        <h3>雕塑类</h3>
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="collapse"
+          data-target="#sculpture"
+        >
+          查看详情
+        </button>
+        <div id="sculpture" class="collapse" style="margin-right: 40px">
+          <p>
+            雕塑类手工艺品具有形态美感和造型语言上的表现力，可以是两个或多个物体、动物或人物的结合，也可以是一个完整的物体。制作过程包括设计、手工雕刻等多个步骤。
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <h3>刺绣类</h3>
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="collapse"
+          data-target="#embroidery"
+        >
+          查看详情
+        </button>
+        <div id="embroidery" class="collapse">
+          <p>
+            刺绣类手工艺品是以针线为主要工具，将丝、棉、麻等线缎绣成各种花鸟虫鱼、人物山水等图案的一种手工艺。其制作过程需要考虑线的颜色搭配和刺绣技巧。
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4" style="margin-left: 80px">
+        <h3>皮影类</h3>
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="collapse"
+          data-target="#shadow"
+        >
+          查看详情
+        </button>
+        <div id="shadow" class="collapse">
+          <p>
+            皮影类手工艺品是以兽皮或纸张为材料，经过雕刻、糊制、绘画等工序制作而成。其特点是造型精美、色彩鲜艳、居功至伟、富有民族特色和地方文化气息。
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-4" style="margin-right: 20px">
+        <h3>剪纸类</h3>
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="collapse"
+          data-target="#paper_cutting"
+        >
+          查看详情
+        </button>
+        <div id="paper_cutting" class="collapse">
+          <p>
+            剪纸类手工艺品是以美术创作的基本原理，通过手工剪刻纸张把最简单的工具和材料变成富有艺术性和实用价值的艺术品。其制作过程需要考虑线条、色彩等多个因素。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 列表组 -->
+    <div class="row">
+      <div class="col-sm-4" style="margin-left: 40px">
+        <h3>相关文章</h3>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a
+              href="http://news.cyol.com/gb/articles/2021-02/09/content_NA7K5i8R5.html"
+              >传统手工艺振兴：把传统精华和时代需求结合起来</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="https://epaper.gmw.cn/gmrb/html/2017-07/20/nw.D110000gmrb_20170720_1-13.htm"
+              >传统工艺的现代价值</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.ihchina.cn/Article/Index/detail?id=18139"
+              >华觉明：中国传统工艺的现代价值与学科建设——《中国传统工艺全集》</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.cacta.cn/detail_BigData.aspx?BDid=5022"
+              >守正创新与跨界融合 | 手工艺的当代转换</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- 表格 -->
+      <div class="col-sm-6" id="chanpinpaihang">
+        <h3>产品排行</h3>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>排名</th>
+              <th>产品名称</th>
+              <th>价格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>「千里江山图」</td>
+              <td>价值连城</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>「光明顶上佛教图」</td>
+              <td>价值较高</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>「万寿寺迎春图」</td>
+              <td>价值不菲</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 输入框组和按钮 -->
+    <div class="row" id="associate" style="margin-left: 50px">
+      <div class="col-sm-6">
+        <h3>反馈建议</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">姓名：</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">留言：</label>
+            <textarea class="form-control" rows="5" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">提交</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="footer bg-light mt-auto py-3">
+      <div class="container text-center">
+        <p class="text-muted mb-0">
+          © 个人信息： 班级:20203D打印学院软件技术一班 学号：20205703017<br />
+
+          姓名：魏银珍 联系方式:152xxxx0231
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

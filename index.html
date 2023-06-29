@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>戏曲民俗手工艺首页</title>
+    <!-- 引入 Bootstrap 样式 和button样式 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/buttons.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 引入字体图标 -->
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <style>
+      /* 自定义样式 */
+      body {
+        background-color: #1f2f81;
+      }
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 450px;
+      }
+      .content {
+        margin: 0 80px;
+        background-color: #ddd;
+      }
+      nav ul li a:hover {
+        background-color: #ff8400;
+      }
+      h6 {
+        color: blue;
+      }
+      .jumbotron{
+      background:url(image/bg.jpg);
+        }
+      </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- 指示符 -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <!-- 轮播图片 -->
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="image/02.PNG" />
+            </div>
+            <div class="carousel-item">
+              <img src="image/03.PNG" />
+            </div>
+            <div class="carousel-item active">
+              <img src="image/04.PNG" />
+            </div>
+          </div>
+          <!-- 左右切换按钮 -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light justify-content-center"
+    >
+      <span class="navbar-brand">戏曲民俗手工艺</span>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"><i class="fa fa-hand-grab-o"></i>首页</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="历史背景.html"><i class="fa fa-hand-o-right"></i> 历史背景</a>
+          </li>
+            
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="艺术风格.html"><i class="fa fa-circle-o-notch"></i> 艺术风格和表现形式 </a>
+          </li>
+          <li class="nav-item active">
+            <a href="社会意义.html" class="nav-link"><i class="fa fa-blind"></i>社会意义</a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="传承和保护.html" class="nav-link">传承和保护<i class="fa fa-hand-scissors-o"></i></a>
+          </li>
+          <li class="nav-item active">
+            <a href="当代价值和启示.html" class="nav-link">当代价值和启示<i class="fa fa-hand-lizard-o"></i>
+            </a>
+          </li>
+          <li class="nav-item active navbar-right">
+            <a href="register.html" class="nav-link">登录<i class="fa fa-bolt"></i></a>
+          </li>
+          <li class="nav-item active navbar-right">
+            <a href="register.html" class="nav-link">注册<i class="fa fa-check"></i></a>
+          </li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+    <!-- 巨幕 -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1>戏曲民俗手工艺</h1>
+        <p>展示中国传统文化中的精湛技艺和独特魅力。</p>
+      </div>
+    </div>
+
+    <!--一些优秀表演艺术家-->
+    <div class="card-columns">
+      <div class="card">
+        <img src="image/常香玉.PNG" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">常香玉</h5>
+          <p class="card-text">常香玉是中国著名的京剧艺术家、表演艺术家、电影演员、导演和教育家。她被誉为“中国现代京剧艺术之母”、“京剧艺术新风尚的开创者”</p>
+        </div>
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>常香玉于1920年出生在浙江省绍兴市，幼年时期随父母移居上海。1944年，她考入了上海戏剧学院，开始接受严格的艺术训练。1951年，常香玉进入北京京剧院，成为一名正式的京剧演员</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">opera</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+       <!---->
+       <div class="card">
+        <blockquote class="blockquote card-body">
+          <div class="container">
+            <div class="row">
+             
+                <video src="image/video02.mp4" controls style=" float: left;max-width: 200px; height: auto"></video>
+              
+            </div>
+          </div>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous video in <cite title="Source Title">traditional cultures</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+        <!---->
+      <div class="card">
+        <img src="image/梅兰芳.PNG" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">梅兰芳</h5>
+          <p class="card-text">20世纪著名的京剧表演艺术家，被誉为“百年京剧第一人</p>
+          <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-primary text-white text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>梅兰芳（1894年-1961年）是20世纪著名的京剧表演艺术家，被誉为“百年京剧第一人”。他出生在一个戏曲世家，在九岁时便开始学习京剧，后来又师承于著名的京剧大师李鹤同。</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">姜坤</h5>
+          <p class="card-text">姜昆，原名姜秀敏，1937年生于北京，祖籍山东莘县。他是我国著名的相声表演家、导演和编剧。创作了大量优秀的相声作品，如《平剧对台戏》《夫唱妇随》《卖油郎独占花魁》等。他的相声风格清新明快，语言幽默风趣，具有很高的艺术价值和观赏性。</p>
+          <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image/荀慧生.PNG" class="card-img" alt="...">
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>在表演上，荀慧生以精湛的表演技巧和高超的唱腔著称，深得观众喜爱。他曾主演过《珍珠塔》、《昭君出塞》等京剧名剧，多次在海内外演出，并获得了许多奖项和荣誉。此外，荀慧生还对京剧音乐进行了创新和探索，推动了京剧艺术的发展和变革。</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">荀慧生</h5>
+          <p class="card-text">荀慧生（1903年—1968年），京剧表演艺术家，被誉为“二十世纪最伟大的京剧艺术家”。他出生于河南省开封市，自幼习戏。1921年，他考入了北京燕京大学预科。其后，他进入了天桥艺人职业学校，正式开始了他的京剧表演艺术生涯。</p>
+          <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+       
+      </div>
+    </div>
+
+    <!-- 选项卡 -->
+    <div class="container my-5" id="xiqu">
+      <h2 class="text-center mb-5">中国戏曲</h2>
+      <ul class="nav nav-tabs mb-3" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="#beijing"
+            role="tab"
+            data-toggle="tab"
+            >京剧</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#yueju" role="tab" data-toggle="tab"
+            >越剧</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#huju" role="tab" data-toggle="tab">沪剧</a>
+        </li>
+      </ul>
+
+      <!-- 选项卡内容 -->
+      <div class="tab-content">
+        <!-- 北京 -->
+        <div role="tabpanel" class="tab-pane fade show active" id="beijing">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="image/京剧.PNG"
+                class="img-fluid rounded mb-3"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <h3>京剧</h3>
+              <p>
+                北京传统戏曲之一，起源于清朝嘉庆年间的“宫庭乐坛”并吸收了汉族戏曲、藏戏、蒙古歌舞及西域艺术等多种文化要素，经过数百年演变而成。
+              </p>
+              <ul class="list-group mb-3">
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >在音乐、唱腔、表演、服装等方面都有独特之处
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >被誉为“中国戏剧的国宝”
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >经典的作品包括《红楼梦》、《长生殿》、《霸王别姬》等
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 越剧 -->
+        <div role="tabpanel" class="tab-pane fade" id="yueju">
+          <div class="row">
+            <div class="col-md-4">
+             
+              <img
+                src="image/越剧2.PNG"
+                class="img-fluid rounded mb-3"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <h3>越剧</h3>
+              <p>
+                越剧是中国的一种地方戏曲，起源于浙江省绍兴市一带.越剧以其独特的唱腔和表演风格吸引了广大观众，逐渐在全国范围内流行。
+              <ul class="list-group mb-3">
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >以婉转柔美的唱腔、流畅优美的舞姿和委婉细腻的表演方式著称
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >被誉为“东方艺术之花”
+                </li>
+              </ul>
+            </div>
+            <!----->
+          </div>
+        </div>
+
+        <!-- 沪剧 -->
+        <div role="tabpanel" class="tab-pane fade" id="huju">
+          <div class="row">
+            <!-- 其他内容区域 -->
+            <div class="col-md-4">
+              <img
+                src="image/沪剧.PNG"
+                class="img-fluid rounded mb-3"
+                alt="..."
+              />
+              <img
+                src="image/沪剧2.PNG"
+                class="img-fluid rounded mb-3"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <h3>沪剧</h3>
+              <p>
+                沪剧，又称上海戏，是中国京剧、豫剧等多种地方戏曲在上海地区的演变和融合而形成的一种独特的戏曲艺术表现形式。沪剧诞生于19世纪末20世纪初的上海，发展至今已有百余年的历史。
+              </p>
+              <ul class="list-group mb-3">
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >以流畅自然、细腻精致的唱腔和灵动优美、舒展流畅的身段姿态为特点，配合简洁明快的音乐节奏和华美绝伦的艺术形象塑造
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check" aria-hidden="true"></i
+                  >被称为“东方歌舞王国”的代表之一
+                </li>
+              </ul>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="container my-5" id="minsu">
+      <h2 class="text-center mb-5">民俗手工艺</h2>
+      <div class="row">
+        <!-- 其他卡片 -->
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="image/蜡染1.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">蜡染</h5>
+                <p class="card-text">一种古老的印染技术，主要流行于江南一带，色彩鲜艳、花纹独特。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="image/手工艺3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">珠宝手工艺品</h5>
+                <p class="card-text">珠宝是指用贵重金属和宝石等制成的装饰品，其制作过程需要精湛的金属加工和宝石镶嵌技巧。黄金、白银、钻石、翡翠等都是常见的珠宝材料</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="image/蜡染2.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">蜡染2</h5>
+                <p class="card-text">是传统的一种纺织印染技艺。它最早起源于中国，后来在东南亚、非洲等地也得到了广泛的应用和发展</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="image/蜡染3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">蜡染</h5>
+                <p class="card-text">现代蜡染在各个国家和地区都有很大的发展，许多设计师和艺术家开始运用蜡染技艺制作服装、配件、装饰品等等，将传统与时尚相结合，推动了蜡染艺术的不断创新和发展。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+        <!----->
+      </div>
+    </div>
+
+    <!-- 折叠 -->
+    <div class="container my-5" id="shougongyi">
+      <h2 class="text-center mb-5">中国手工艺</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>陶瓷</h3>
+          <button
+            type="button"
+            class="btn btn-primary mb-3"
+            data-toggle="collapse"
+            data-target="#taoci-more"
+            aria-expanded="false"
+            aria-controls="taoci-more"
+          >
+            了解更多
+          </button>
+          <div class="collapse" id="taoci-more">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >是中国手工艺中的一个重要领域
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >中国陶瓷历史悠久，技艺精湛
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >代表作品有明代官窑、清代景德镇等
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 其他内容区域 -->
+        <!--第一小部分-->
+        <div class="col-md-4">
+          <h3>银器</h3>
+          <button
+            type="button"
+            class="btn btn-primary mb-3"
+            data-toggle="collapse"
+            data-target="#taoci-more"
+            aria-expanded="false"
+            aria-controls="taoci-more"
+          >
+            了解更多
+          </button>
+          <div class="collapse" id="taoci-more">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >是中式礼仪文化的重要体现
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >中国的银器制作历史悠久，最早可以追溯到西周时期
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >传统的中国银器具有许多特点，如造型优美、线条流畅、雕刻精湛、工艺复杂等等
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--第二小部分-->
+        <div class="col-md-4">
+          <h3>木雕</h3>
+          <button
+            type="button"
+            class="btn btn-primary mb-3"
+            data-toggle="collapse"
+            data-target="#taoci-more"
+            aria-expanded="false"
+            aria-controls="taoci-more"
+          >
+            了解更多
+          </button>
+          <div class="collapse" id="taoci-more">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >木雕已有数千年的历史，被誉为“东方艺术之花”
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >是一种传统的手工艺技术，利用各种木材进行雕刻和琢磨制作出各种不同形态的艺术品
+              </li>
+              <li class="list-group-item">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i
+                >常见的木雕品包括佛像、人物、动物等各种生活场景和文化元素。
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--第三小部分结束-->
+      </div>
+    </div>
+
+    <!-- 轮播 -->
+    <div class="container my-5" id="yinshi">
+      <h2 class="text-center mb-5">中国美食</h2>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="image/中国美食.PNG"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="image/中国美食2.PNG"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="image/中国美食3.PNG"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="image/中国美食4.PNG"
+              alt="..."
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">上一个</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">下一个</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer bg-light mt-auto py-3">
+      <div class="container text-center">
+        <p class="text-muted mb-0">© 个人信息：
+          班级:20203D打印学院软件技术一班
+          学号：20205703017<br/>
+
+          姓名：魏银珍
+          联系方式:152xxxx0231
+        </p>
+      </div>
+    </footer>
+
+    
+    <!-- 工具提示 -->
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
