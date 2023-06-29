@@ -1,1 +1,1 @@
-# bootstrap
+# 初学bootstrap
